@@ -22,3 +22,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)'
+    parallel: true
+    parallelCount: 8
